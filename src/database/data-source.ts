@@ -1,6 +1,9 @@
 import "reflect-metadata";
 import { DataSource } from "typeorm";
 
+import { Category } from "../modules/cars/model/Category";
+import { CreateCategories1657902009418 } from "./migrations/1657902009418-CreateCategories";
+
 const AppDataSource = new DataSource({
   type: "postgres",
   host: "localhost",
@@ -10,8 +13,8 @@ const AppDataSource = new DataSource({
   database: "rentx",
   synchronize: false,
   logging: false,
-  entities: [],
-  migrations: ["./src/database/migrations/*.ts"],
+  entities: [Category],
+  migrations: [CreateCategories1657902009418],
   subscribers: [],
 });
 
