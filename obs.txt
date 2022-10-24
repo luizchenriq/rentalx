@@ -1,0 +1,17 @@
+Com a nova versão do typeorm (jun/2022), só consegui criar uma nova migration através do npx.
+Pelo yarn não consegui:
+
+npx typeorm-ts-node-esm migration:create ./src/database/migrations/CreateSpecifications
+
+yarn typeorm migration:run
+
+sudo docker logs rentx -f
+sudo docker-compose up -d
+sudo docker-compose down
+
+git add .
+git remote add origin https://github.com/luizchenriq/rentalx.git
+git remote set-url origin https://github.com/luizchenriq/rentalx.git
+git pull origin master
+git commit -m "injecao de dependencia - continuacao d"
+git push origin master
