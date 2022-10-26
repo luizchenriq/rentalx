@@ -1,8 +1,5 @@
+import path = require("path");
 import { DataSource } from "typeorm";
-
-//import { Category } from "../modules/cars/entities/Category";
-//import { CreateCategories1657902009418 } from "./migrations/1657902009418-CreateCategories";
-//import { CreateSpecifications1666218666715 } from "./migrations/1666218666715-CreateSpecifications";
 
 const dataSource = new DataSource({
   type: "postgres",
@@ -11,14 +8,8 @@ const dataSource = new DataSource({
   username: "docker",
   password: "ignite",
   database: "rentx",
-  //entities: [Category],
-  entities: [
-    __dirname + '/../../src/modules/**/entities/*.ts'
-  ],
-  //migrations: [CreateCategories1657902009418, CreateSpecifications1666218666715],
-  migrations: [
-    __dirname + '/../../src/database/migrations/*.ts',
-  ],
+  entities: [ path.join(__dirname, "/../../src/modules/**/entities/*.ts") ],
+  migrations: [ path.join(__dirname, "/../../src/database/migrations/*.ts") ],
 });
 
 export async function createConnection(host = "database"): Promise<DataSource> {

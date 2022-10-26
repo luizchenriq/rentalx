@@ -1,5 +1,5 @@
 import { resourceUsage } from "process";
-import { MigrationInterface, QueryRunner, Table } from "typeorm"
+import { MigrationInterface, QueryRunner, Table } from "typeorm";
 
 export class CreateUsers1666630650942 implements MigrationInterface {
 
@@ -35,7 +35,7 @@ export class CreateUsers1666630650942 implements MigrationInterface {
                         type: "varchar",
                     },
                     {
-                        name: "admin",
+                        name: "isadmin",
                         type: "boolean",
                         default: false,
                     },

@@ -1,3 +1,11 @@
+//import { Category } from "../modules/cars/entities/Category";
+//import { CreateCategories1657902009418 } from "./migrations/1657902009418-CreateCategories";
+//import { CreateSpecifications1666218666715 } from "./migrations/1666218666715-CreateSpecifications";
+//entities: [Category],
+//migrations: [CreateCategories1657902009418, CreateSpecifications1666218666715],
+
+
+
 Com a nova versão do typeorm (jun/2022), só consegui criar uma nova migration através do npx.
 Pelo yarn não consegui:
 
@@ -8,6 +16,8 @@ yarn typeorm migration:run
 sudo docker logs rentx -f
 sudo docker-compose up -d
 sudo docker-compose down
+
+usar git clone com url ssh sempre
 
 git add .
 git remote add origin https://github.com/luizchenriq/rentalx.git
