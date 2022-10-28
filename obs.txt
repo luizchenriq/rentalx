@@ -5,11 +5,9 @@
 //migrations: [CreateCategories1657902009418, CreateSpecifications1666218666715],
 
 
+yarn typeorm-ts-node-esm migration:create /home/luiz/Documentos/rocketseat-ignite/nodejs/rentx/src/database/migrations/AlterUserAddAvatar
 
-Com a nova versão do typeorm (jun/2022), só consegui criar uma nova migration através do npx.
-Pelo yarn não consegui:
-
-npx typeorm-ts-node-esm migration:create ./src/database/migrations/CreateSpecifications
+yarn typeorm-ts-node-esm migration:create /home/luiz/Documentos/rocketseat-ignite/nodejs/rentx/src/database/migrations/CreateSpecifications
 
 yarn typeorm migration:run
 

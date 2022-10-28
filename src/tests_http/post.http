@@ -1,7 +1,0 @@
-POST http://localhost:3333/categories HTTP/1.1
-content-type: application/json
-
-{
-    "name": "suv",
-    "description": "categoria de carro suv"
-}
